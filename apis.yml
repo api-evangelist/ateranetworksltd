@@ -1,23 +1,86 @@
 aid: ateranetworksltd
+
 name: Ateranetworksltd
-description: 'Ateranetworksltd is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.atera.com/app/uploads/2026/03/hp_social.webp
+
+description: 'Atera is an IT automation software company providing remote access, billing, reporting, and automation services. Founded in 2011, it offers a data‑science‑based platform combining RMM, PSA, and remote access for MSPs, improving operational efficiency and offering disruptive pricing. The company is listed on EquityZen for pre‑IPO investment opportunities.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ateranetworksltd/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- IT Automation
+- Remote Access
+- MSP
+- SaaS
+- Software
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/ateranetworksltd-llms.txt
+- type: SecurityTxt
+  url: well-known/ateranetworksltd-status-security.txt
+- type: WellKnown
+  url: well-known/ateranetworksltd-well-known.yml
+- type: Hosts
+  url: hosts/ateranetworksltd-hosts.yml
+- type: Vendors
+  url: vendors/ateranetworksltd-vendors.yml
+- type: TermsOfService
+  url: https://www.atera.com/terms-of-use/
+- type: Support
+  url: https://support.atera.com/hc/
+- type: StatusPage
+  url: https://status.atera.com/
+- type: Security
+  url: https://community.atera.com/discussions/tagged/Security
+- type: Roadmap
+  url: https://www.atera.com/roadmap/
+- type: PrivacyPolicy
+  url: https://www.atera.com/privacy/
+- type: Login
+  url: https://app.atera.com/login
+- type: Blog
+  url: https://blog.atera.com/
+- type: Documentation
+  url: https://dev.atera.com/
+- type: DomainSecurity
+  url: security/ateranetworksltd-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/ateranetworksltd
+  url: https://www.atera.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Cloudflare blocks access to potential spec URLs, returning HTML challenge pages.
+  evidence:
+    - url: https://api.atera.com/openapi.json
+      status: 403
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
